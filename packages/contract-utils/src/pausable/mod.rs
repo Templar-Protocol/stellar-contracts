@@ -137,7 +137,6 @@ pub enum PausableError {
 
 // ################## EVENTS ##################
 
-/// Event emitted when the contract is paused.
 #[contractevent]
 #[derive(Clone, Debug, Eq, PartialEq)]
 pub struct Paused {}
@@ -151,7 +150,6 @@ pub fn emit_paused(e: &Env) {
     Paused {}.publish(e);
 }
 
-/// Event emitted when the contract is unpaused.
 #[contractevent]
 #[derive(Clone, Debug, Eq, PartialEq)]
 pub struct Unpaused {}

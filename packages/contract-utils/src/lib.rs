@@ -1,5 +1,6 @@
 #![no_std]
 
+#[cfg(feature = "crypto")]
 pub mod crypto;
 pub mod math;
 #[cfg(feature = "merkle-distributor")]

@@ -13,8 +13,9 @@ crate-type = ["lib", "cdylib"]
 doctest = false
 
 [features]
-default = ["merkle-distributor"]
-merkle-distributor = []
+default = ["crypto", "merkle-distributor"]
+crypto = []
+merkle-distributor = ["crypto"]
 
 [dependencies]
 soroban-sdk = { workspace = true }
