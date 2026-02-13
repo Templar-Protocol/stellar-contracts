@@ -199,6 +199,5 @@ pub trait UpgradeableMigratableInternal {
 #[derive(Copy, Clone, Debug, Eq, PartialEq, PartialOrd, Ord)]
 #[repr(u32)]
 pub enum UpgradeableError {
-    /// When migration is attempted but not allowed due to upgrade state.
     MigrationNotAllowed = 1100,
 }

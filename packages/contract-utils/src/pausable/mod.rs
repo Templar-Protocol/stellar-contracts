@@ -131,9 +131,7 @@ pub trait Pausable {
 #[derive(Copy, Clone, Debug, Eq, PartialEq, PartialOrd, Ord)]
 #[repr(u32)]
 pub enum PausableError {
-    /// The operation failed because the contract is paused.
     EnforcedPause = 1000,
-    /// The operation failed because the contract is not paused.
     ExpectedPause = 1001,
 }
 
